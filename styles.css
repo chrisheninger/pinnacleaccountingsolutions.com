@@ -1,0 +1,432 @@
+/* -------------------------------------------------------------------------- */
+/* -----| STYLES |----------------------------------------------------------- */
+/* -----| based on work by Bootstrap, from Twitter |------------------------- */
+/* -----| modified by Chris Heninger - iGravityDesign.com |------------------ */
+/* -------------------------------------------------------------------------- */
+
+html, body {
+	background-color: #fdfdfd;
+}
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 18px;
+	color: #333333;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| FONTS |------------------------------------------------------------ */
+/* -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'A35L';
+    src: url('fonts/a-light-webfont.eot');
+    src: url('fonts/a-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/a-light-webfont.woff') format('woff'),
+         url('fonts/a-light-webfont.ttf') format('truetype'),
+         url('fonts/a-light-webfont.svg#A35L') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'A55O';
+    src: url('fonts/a-oblique-webfont.eot');
+    src: url('fonts/a-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/a-oblique-webfont.woff') format('woff'),
+         url('fonts/a-oblique-webfont.ttf') format('truetype'),
+         url('fonts/a-oblique-webfont.svg#A55O') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'A55R';
+    src: url('fonts/a-roman-webfont.eot');
+    src: url('fonts/a-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/a-roman-webfont.woff') format('woff'),
+         url('fonts/a-roman-webfont.ttf') format('truetype'),
+         url('fonts/a-roman-webfont.svg#A55R') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#wrap {
+	width: 740px;
+	margin: 0 auto;
+	zoom: 1;
+}
+
+.header {
+	width: 740px;
+	height: 200px;
+	background: url(images/header.jpg) no-repeat #000000;
+	float: left;
+}
+
+.logo {
+	width: 200px;
+	height: 60px;
+	background: #004a95;
+	float: left;
+	margin-top: 0px;
+	margin-left: 20px;
+	padding: 40px 10px 0px 10px;
+}
+
+.navigation {
+	width: 740px;
+	height: 30px;
+	padding-top: 16px;
+}
+
+.content {
+	width: 740px;
+	padding-top: 40px;
+}
+
+.leftcolumn {
+	width: 170px;
+	padding: 0 20px 0 9px;
+	border-left: 1px #c7d5e7 solid;
+	float: left;
+}
+
+.rightcolumn {
+	width: 540px;
+	float: left;
+}
+
+.threecolumns {
+	width: 236px;
+	padding-right: 16px;
+	float: left;
+}
+.endcolumn {
+	width: 236px;
+	float: left;
+}
+
+#footer {
+	border-top: 1px #c7d5e7 solid;
+}
+
+#toTop {
+	width:100px;
+	border:1px solid #ccc;
+	background:#f7f7f7;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	display:none;
+	color:#333;
+	font-size:11px;
+	text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| TYPE |------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+p {
+	font-size: 14px;
+	font-family: 'A55R';
+	line-height: 24px;
+	margin-bottom: 9px;
+}
+p.intro {
+	font-size: 20px;
+	font-family: 'A35L';
+	line-height: 28px;
+	margin-bottom: 18px;
+	color: #666666;
+}
+.small {
+	font-size: 11px;
+	line-height: 8px;
+	color: #666666;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #404040;
+	line-height: 36px;
+}
+h1 {
+	margin-bottom: 18px;
+	font-size: 30px;
+	font-weight: normal;
+	color: #22559c;
+}
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+	color: #22559c;
+}
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #22559c;
+}
+h4 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #22559c;
+}
+h5 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #22559c;
+}
+h6 {
+	font-size: 13px;
+	font-weight: normal;
+	color: #22559c;
+}
+ul, ol {
+	margin: 0 0 18px 0;
+}
+ul ul, ul ol, ol ol, ol ul {
+	margin-bottom: 0;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+li {
+	font-size: 14px;
+	font-family: 'A55R';
+	line-height: 30px;
+	list-style: none;
+}
+
+hr {
+	color: #c7d5e7;
+	background-color: #c7d5e7;
+	border: 0px;
+	height: 1px;
+}
+
+.servicesinclude {
+	color: #666666;
+	line-height: 24px;
+}
+
+.servicesincludehr {
+	background-color: #cccccc;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| LEFT COLUMN |------------------------------------------------------ */
+/* -------------------------------------------------------------------------- */
+
+.lynn {
+	width: 150px;
+	font-family: 'A55R';
+	font-size: 18px;
+	line-height: 26px;
+	margin-top: 12px;
+}
+
+.title {
+	width: 150px;
+	font-family: 'A35L';
+	font-size: 12px;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+
+.quote {
+	width: 150px;
+	font-family: 'A55O';
+	font-size: 16px;
+	color: #666666;
+	line-height: 26px;
+}
+
+.quoteauthor {
+	width: 150px;
+	font-family: 'A35L';
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.services {
+	width: 150px;
+	font-family: 'A55R';
+	font-size: 16px;
+	color: #22559c;
+	line-height: 26px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| MAIN CONTENT |----------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.lynncontent {
+	font-family: 'A55R';
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.titlecontent {
+	font-family: 'A35L';
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.photo {
+	float: left;
+	width: 134px;
+	margin-right: 8px;
+	margin: 16px 8px 16px 0;
+}
+.bio {
+	width: 390px;
+	float: left;
+	margin-left: 8px;
+	margin: 16px 0 16px 8px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| LAVALAMP |--------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.lavaLamp {
+	position: relative;
+	height: 46px;
+	width: 740px;
+	overflow: hidden;
+}
+
+.lavaLamp li {
+	float: left;
+	list-style: none;
+	height: 46px;
+}
+
+.lavaLamp li.back {
+	border-top: #004a95 solid 1px;
+	border-bottom: #004a95 solid 1px;
+	height: 44px;
+	z-index: 8;
+	position: absolute;
+}
+
+.lavaLamp li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #333333;
+	text-align: center;
+	letter-spacing: 0;
+	z-index: 10;
+	display: block;
+	float: left;
+	position: relative;
+	padding-top: 8px;
+	width: 148px;
+}
+.lavaLamp li a:visited {
+	color: #333333;
+	border: none;
+}
+
+.lavaLamp li a:hover, .lavaLamp li a:active {
+	color: #004993 !important;
+	border: none;
+}
+
+.lavaLamp li.current a {
+	color: #004993 !important;
+}
+
+.oneline {
+	padding-top: 3px;
+}
+
+.for {
+	color: #666666;
+	font-size: 11px;
+	line-height: 11px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| FOOTER |----------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.footer_left {
+	width: 400px;
+	padding: 18px 0;
+	float: left;
+}
+
+.footer_right {
+	width: 340px;
+	padding: 16px 0;
+	float: right;
+}
+.footer_heading {
+	font-family: 'A55R';
+	color: #808080;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.footer_address {
+	font-family: 'A35L';
+	color: #666666;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.footer_nav ul {
+	color: #666666;
+	width: 100%;
+}
+
+.footer_nav ul li {
+	display: inline-block;
+	padding-left: 15px;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.footer_nav ul li a {
+	color: #666666;
+	text-decoration: none;
+}
+
+.footer_nav ul li a:hover {
+	color: #22559c;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| MISC FLOATS |------------------------------------------------------ */
+/* -------------------------------------------------------------------------- */
+
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
